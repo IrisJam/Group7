@@ -1,0 +1,463 @@
+@charset "UTF-8";
+/* Body */
+body {
+	font-family: source-sans-pro;
+	background-color: #f2f2f2;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: 200;
+}
+/* Container */
+.container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 1000px;
+	background-color: #FFFFFF;
+}
+/* Navigation */
+header {
+	width: 100%;
+	height: 5%;
+	background-color: #52bad5;
+	border-bottom: 1px solid #2C9AB7;
+}
+.logo {
+	color: #fff;
+	font-weight: bold;
+	text-align: undefined;
+	width: 10%;
+	float: left;
+	margin-top: 15px;
+	margin-left: 25px;
+	letter-spacing: 4px;
+}
+nav {
+	float: right;
+	width: 50%;
+	text-align: right;
+	margin-right: 25px;
+}
+header nav ul {
+	list-style: none;
+	float: right;
+}
+nav ul li {
+	float: left;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: left;
+	margin-right: 25px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	transition: all 0.3s linear;
+}
+ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+ul li:hover a {
+	color: #2C9AB7;
+}
+.hero_header {
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	letter-spacing: 4px;
+}
+/* Hero Section */
+.hero {
+	padding-top: 550px;
+	padding-bottom: 45px;
+	background: url(../images/background1.png) no-repeat;
+    background-size: 120%; 
+}
+
+
+
+/* More info */
+footer {
+	background-color: #FFFFFF;
+	padding-bottom: 35px;
+}
+.footer_column {
+	width: 50%;
+	text-align: center;
+	padding-top: 20px;
+	float: left;
+}
+footer .footer_column h2 {
+	color: #000000;
+	text-align: center;
+}
+footer .footer_column p {
+	color: #000000;
+	text-align: center;
+}
+.cards {
+	width: 100%;
+	height: auto;
+	max-width: 400px;
+	max-height: 200px;
+}
+footer .footer_column p {
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: justify;
+	line-height: 20px;
+	font-weight: lighter;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 18px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.button {
+	width: 200px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #4D4B50;
+	color: #4D4B50;
+	transition: all 0.3s linear;
+}
+.button:hover {
+	background-color: #484646;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.interactive_home_button {
+	position: relative;
+	left:400px;
+	width: 100px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #4D4B50;
+	color: #4D4B50;
+	transition: all 0.3s linear;
+}
+.interactive_home_button:hover {
+	background-color: #484646;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.prevent_home_button {
+	position: relative;
+	right:-875px;
+	width: 100px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #4D4B50;
+	color: #4D4B50;
+	transition: all 0.3s linear;
+}
+.prevent_home_button:hover {
+	background-color: #484646;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.mechanism_home_button {
+	position: relative;
+	left:725px;
+	width: 100px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #4D4B50;
+	color: #4D4B50;
+	transition: all 0.3s linear;
+}
+.mechanism_home_button:hover {
+	background-color: #484646;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.paper_button {
+	width: 200px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #FFFFFF;
+	color: #FFFFFF;
+	transition: all 0.3s linear;
+}
+.paper_button:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+	cursor: pointer;
+}
+.copyright {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #717070;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	border-top-width: 2px;
+}
+.footer_banner {
+	background-color: #B3B3B3;
+	padding-top: 60px;
+	padding-bottom: 60PX;
+	margin-bottom: 0px;
+	background-size: 50%;
+	background-image: url(../images/background6.jpg);
+}
+footer {
+	display: inline-block;
+}
+.hidden {
+	display: none;
+}
+
+
+.breach_logo{
+	position:absolute;
+	top:300px;
+	left:525px;
+}
+.interactive{
+	padding-top:0px;
+	padding-bottom: 0px;
+	background: url(../images/background3.jpg) no-repeat;
+    background-size: 100%; 
+	text-align: center;
+}
+.instruction{
+	text-align:center;
+	font-size:25px;
+}
+input{
+	width:100px;
+	height:20px;
+	border: 3px solid #4D4B50;
+}
+a{
+	text-decoration: none;
+}
+.interactive_title{
+	position: relative;
+	left: 80px;
+	top:20px;
+	font-size:35px;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	
+}
+.prevent_title{
+	position: relative;
+	left: 500px;
+	top:20px;
+	font-size:35px;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+}
+.prevention{
+	background: url(../images/background5.jpg) no-repeat;
+    background-size: 100%; 
+}
+.mechanism_title{
+	position: relative;
+	left: 400px;
+	top:20px;
+	font-size:35px;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+}
+.mechanism{
+	background-color: #FFFFFF;
+	background-image: url("../images/background7.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.video-container{
+	background-image: url("../images/part3.png");
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 500px;
+    border: none; /* 移除边框属性 */
+    padding: 0;
+    margin: 10%;
+    position: relative;
+
+  }
+	
+   .video-container video {
+	display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+
+.video-container .text-content {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+	width: 500px;
+    transform: translate(-50%, -50%);
+    text-align:justify;
+    font-size: 24px;
+}
+	
+	
+
+.part2button1 {
+    position: absolute;
+	top:40px;
+    right: -190px; /* 调整按钮相对于容器的位置 */
+    width: 180px;
+    height: 100px;
+    background-color: #FFFFFF;
+	
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #E87C84;
+	color: #000000;
+	transition: all 0.3s linear;
+  }
+.part2button1:hover {
+    background-color: #E87C84;
+    color: white;
+	}
+.part2button2 {
+    position: absolute;
+	top:140px;
+    right: -190px; /* 调整按钮相对于容器的位置 */
+    width: 180px;
+    height: 100px;
+    background-color: #FFFFFF;
+	
+	text-align: center;
+	vertical-align: middle;
+	
+    border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #E8C14C;
+	color: #000000;
+	transition: all 0.3s linear;
+  }
+.part2button2:hover {
+    background-color: #E8C14C;
+    color: white;
+}
+
+.part2button3 {
+    position: absolute;
+	top:240px;
+    right: -190px; /* 调整按钮相对于容器的位置 */
+    width: 180px;
+    height: 100px;
+    background-color: #FFFFFF;
+	
+	text-align: center;
+	vertical-align: middle;
+	
+    border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #61BB47;
+	color: #000000;
+	transition: all 0.3s linear;
+  }
+.part2button3:hover {
+    background-color: #61BB47;
+    color: white;
+}
+.part2button4 {
+    position: absolute;
+	top:340px;
+    right: -190px; /* 调整按钮相对于容器的位置 */
+    width: 180px;
+    height: 100px;
+    background-color: #FFFFFF;
+	
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #5B78BE;
+	color: #000000;
+	transition: all 0.3s linear;
+  }
+.part2button4:hover {
+    background-color: #5B78BE; 
+    color:white;
+}

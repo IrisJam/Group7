@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BREACH ATTACK</title>
+<link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<!-- Main Container -->
+<div class="container" id="home"> 
+  <!-- header -->
+  <header> <a href="">
+    <h4 class="logo">BREACH</h4>
+	<h4 class="logo">ATTACK</h4>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#about">ABOUT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Navigation Section -->
+  <section class="hero" id="hero">
+	<img src="images/Breach_Attack_logo.png" alt="BREACH" width="400" height="100" class="breach_logo"/>
+    <a href="#patr2"><div class="button">Mechanisms</div></a>
+	<a href="#interactive"><div class="button">Hands on attack</div></a>
+	<a href="#prevention"><div class="button">Prevention</div></a>
+  </section>
+  <!-- Mechanism Section -->
+<section class="mechanism" id="patr2">
+<div>
+    	<b class="mechanism_title">How does BREACH work?</b>
+		<a href="#home"><button class="mechanism_home_button">HOME</button></a>
+	</div>
+<div class="video-container">
+	
+  <div class="text-content" id="text1">
+       The BREACH attack is a compression side-channel attack, which targets information compressed in HTTP response bodies. This attack can be used to extract login credentials, anti-CSRF tokens and other sensitive, personally identifiable information from SSL-enabled websites.
+	</div>
+	
+    <div class="text-content" id="text2">
+        Deflate (stylized as DEFLATE) is a lossless data compression file format that uses a combination of LZ77 and Huffman coding.<br>
+		LZ77 replaces occurrences of three or more characters with "pointer" values to reduce space.<br>
+		Huffman coding replaces characters with symbols in order to optimize the description of the data to the smallest size possible.
+
+    </div>
+	
+    <div class="text-content" id="text3">
+        Breakthrough point ：The length of the compressed data is still visible after compressing with the DEFLATE algorithm.<br>
+		Mechanism:<br>
+		1.	Injecting guesses of the secrets into the HTTP response bodies. <br>
+		2.	Observing the time when responses would be highly compressed, and the output length differs, means the guess matches.<br>
+		3.	Detecting the secret information.<br>
+		4.	Extracting the complete secret.
+
+    </div>
+	
+ <video width="76%" height="84%" controls id="videoPlayer">
+  <source src="video/mov_bbb.mp4" type="video/mp4">
+  <source src="video/mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+	
+</video>
+
+
+	<button class="part2button1" onclick="showText(1)">Introduction</button>
+    <button class="part2button2" onclick="showText(2)">Deflate compression algorithm</button>
+	<button class="part2button3" onclick="showText(3)">Attack Mechanism</button>
+	<button class="part2button4" onclick="showVideo()">Video Demonstration</button>
+
+	</div>
+
+</section>
+	
+
+	
+  <!-- interactive Section -->
+  <section class="interactive" id="interactive">
+	<div>
+    	<b class="interactive_title">Perform an attack!</b>
+		<a href="#home"><button class="interactive_home_button">HOME</button></a>
+	</div>
+	<p class="instruction">The server randomly generated a secret consisting of a sequence of 5 digits, try to get the secret using what you have learned and the information from attack!</p>
+	<div>
+		<button id="attack_button" class="button" onClick="attack(secret[cnt])">Attack</button>
+		<button class="button" id="reset_button" onClick="init()">Reset</button>
+	</div>
+	<h3 id="known">The secret : ?????</h3>
+	<h3 class="attack_information">Injecting "", received a response of length</h3>
+	<h3 class="attack_information">Injecting "", received a response of length</h3>
+	<h3 class="attack_information">Injecting "", received a response of length</h3>
+	<h3 class="attack_information">Injecting "", received a response of length</h3>
+	<h3 class="attack_information">Injecting "", received a response of length</h3>
+	<h3 class="attack_information">Injecting "", received a response of length</h3>
+	<h3 class="attack_information">Injecting "", received a response of length</h3>
+	<h3 class="attack_information">Injecting "", received a response of length</h3>
+	<h3 class="attack_information">Injecting "", received a response of length</h3>
+	<h3 class="attack_information">Injecting "", received a response of length</h3>
+	<em>Your guess of current digit of secret :</em>
+	<input id="attack_input"/>
+	<div id="confirm_button" class="button" onClick="verify()">Confirm</div>
+
+
+  </section>
+
+  <!-- Prevention Section -->
+  <footer class="prevention" id="prevention">
+	<div>
+    	<b class="prevent_title">How to prevent?</b>
+		<a href="#home"><button class="prevent_home_button">HOME</button></a>
+	</div>
+    <article class="footer_column">
+      <h2>Length Hiding</h2>
+      <img src="images/tech1.jpg" alt="" width="300" height="150" class="cards"/>
+      <p>Useless value added into compressed response or confusion of the autual length will impair attacker's ability to calculate the differences in length.</p>
+    </article>
+    <article class="footer_column">
+      <h2>Separating Secrets from User Input</h2>
+      <img src="images/tech2.jpg" alt="" width="300" height="150" class="cards"/>
+      <p>Instead of providing secrets in the header, serve it in a different context, which will completely prevent attack that achieves via varying input.</p>
+    </article>
+	<article class="footer_column">
+      <h2>Masking Secrets</h2>
+      <img src="images/tech3.jpg" alt="" width="300" height="150" class="cards"/>
+      <p>Mask the secret with a random disposable value to produce a new secret every time. </p>
+    </article>
+	<article class="footer_column">
+      <h2>Request Rate-Limiting and Monitoring</h2>
+      <img src="images/tech4.png" alt="" width="300" height="150" class="cards"/>
+      <p>Implementation of the attack needs to send thousands of requests in a short time, which is impossible for a human. Detecting it can help to defense from the potential attacks.</p>
+    </article>
+  </footer>
+  <!-- Footer Section -->
+  <section class="footer_banner" id="about">
+    <p class="hero_header">REFERENCES AND MORE DETAILS CAN BE FOUND IN OUR PAPER</p>
+    <a href="paper/BREACH.pdf"><div class="paper_button">PAPER</div></a>
+  </section>
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2023- <strong>NUS-SWS DOTA GROUP7</strong></div>
+</div>
+<script src="jscode/action.js"></script>
+<script type="text/javascript" src="canvas-nest.js-master/dist/canvas-nest.umd.js"></script>
+<script type="text/javascript">
+  var cn = new CanvasNest(document.getElementById("interactive"), {
+    color: '0,0,0',
+	zIndex: 0,
+	opacity: 0.7,
+    count: 100,
+  });
+</script>
+
+<!-- Main Container Ends -->
+</body>
+</html>
